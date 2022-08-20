@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbarstyle.css" />
+
+    <!-- Moralis & web3 -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <!-- <script src="https://unpkg.com/moralis-v1/dist/moralis.js"></script> -->
+    <script src="https://unpkg.com/moralis@0.0.184/dist/moralis.js"></script>
+
+
+    <title>Liberty 🔥 | Create</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navBarItems"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navBarItems">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Liberty 🔥</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="mylisting.html" class="nav-link">My Listing</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="listing.html" class="nav-link">Listing</a>
+          </li>
+          <li class="nav-item">
+            <a href="create.html" class="nav-link">Create</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="profile.html" class="nav-link">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://docs.google.com/document/d/1tu3gU3p1ilVbhrEf9AQ9YUxJr8_zHU_XMmw1RpNZo4s/edit?usp=sharing"
+              class="nav-link"
+              target="_blank"
+              >whitePaper</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container box" id="contact">
+      <h2>Create</h2>
+      <p>
+        <small
+          >Currently we are only supporting Image content but soon we support
+          all kind of media - Videos, blogs, etc</small
+        >
+      </p>
+
+      <p>
+        <small>Once you upload your content it is there forever as we use IPFS and filecoine for storage, Hence no one downs your data even we can't do that.</small
+        >
+      </p>
+      
+      <!-- <form  action="" method="post"> -->
+      <div id="createItem" class="form-group">
+        <div class="alert alert-success" id="msg">Success!!</div>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            name="title"
+            placeholder="Title"
+            id="txtCreateItemName"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea
+            class="form-control"
+            id="txtCreateItemDescription"
+            rows="3"
+            name="description"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="image">Upload your content</label>
+          <input
+            type="file"
+            class="form-control-file"
+            name="image"
+            id="fileCreateItemFile"
+          />
+        </div>
+
+        <!-- Feature is still in progress -->
+        <div class="form-group" style="display: none">
+          <label for="selectCreateItemStatus">Status</label>
+          <select id="selectCreateItemStatus" class="form-control">
+            <option value="0">Not for sale</option>
+            <option value="1">Instant buy</option>
+            <option value="2">Accept Offers</option>
+          </select>
+        </div>
+
+        <p style="line-height:1.5rem"><small>please wait for a while after clicking submit we are on test servers, and if you  submit big files it would take longer so please avoid.</small></p>
+
+
+
+        <button
+          id="btnCreateItem"
+          type="submit"
+          class="btn btn-primary btn-green-moon"
+        >
+          Submit
+        </button>
+
+        
+
+        <div
+          id="spinner"
+          class="spinner-border btn btn-primary btn-green-moon"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- </form> -->
+    </div>
+    <script src="abi.js"></script>
+    <script src="create.js"></script>
+  </body>
+</html>

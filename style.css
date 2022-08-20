@@ -1,0 +1,183 @@
+body {
+  background-color: #242424;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 30px;
+  color: #777;
+}
+
+section {
+  margin-top: 40px;
+}
+
+.card {
+  border: 2px solid red;
+  margin: 10px 4px;
+  transition: 0.6s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-block {
+  padding: 10px;
+}
+
+.scrollcards {
+  background-color: #fff;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+div.scrollcards .card {
+  display: inline-block;
+  padding: 14px;
+  text-decoration: none;
+  height: auto;
+  width: 300px;
+}
+
+.custom-form-control {
+  border: none;
+}
+
+.box {
+  max-width: 40%;
+  margin: 100px auto;
+}
+
+/* media query for box for small screen to take full width */
+
+@media only screen and (max-width: 1000px) {
+  .box {
+    max-width: 100%;
+  }
+}
+
+/* graident background */
+
+.background-1 {
+  background: #282537;
+  background-image: -webkit-radial-gradient(
+    top,
+    circle cover,
+    #3c3b52 0%,
+    #252233 80%
+  );
+  background-image: -moz-radial-gradient(
+    top,
+    circle cover,
+    #3c3b52 0%,
+    #252233 80%
+  );
+  background-image: -o-radial-gradient(
+    top,
+    circle cover,
+    #3c3b52 0%,
+    #252233 80%
+  );
+  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+}
+
+/* Forms */
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #f9f9f9;
+  padding: 25px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4caf50;
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.ast-custom-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  font-size: 1rem;
+}
+
+.btn-green-moon {
+  /* background: #990a22 !important;
+  background: linear-gradient(
+    to right,
+    #990a22 8%,
+    #c80936 50%,
+    #d31f1f 100%
+  ) !important; */
+
+  background: linear-gradient(135deg, #dfec51 0%, #73aa0a 100%);
+
+  /* background: #56ab2f !important;
+  background: -webkit-linear-gradient(to right, #a8e063, #56ab2f) !important;
+  background: linear-gradient(to right, #a8e063, #56ab2f) !important; */
+  color: #fff !important;
+  border: 3px solid #eee !important;
+  border-radius: 5px !important;
+}
+
+.gradient-text {
+  background-image: linear-gradient(#990a22 8%, #c80936 50%, #d31f1f 100%);
+}
+
+.image--cover {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* margin: 20px; */
+
+  object-fit: cover;
+  object-position: center right;
+}
+svg {
+  width: 60px;
+  height: 60px;
+  display: flex;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.5rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: white;
+  color: black;
+  /* background: linear-gradient(135deg, #f5515f 0%, #a1051d 100%); */
+  background: linear-gradient(135deg, #dfec51 0%, #73aa0a 100%);
+}

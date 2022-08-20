@@ -1,0 +1,54 @@
+.navbar {
+  font-weight: 700;
+  background: #990a22;
+  background: linear-gradient(to right, #990a22 8%, #c80936 50%, #d31f1f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#990a22", endColorstr="#d31f1f", GradientType=1 );
+}
+.navbar .navbar-nav li a {
+  background: #f9ce70;
+  background: linear-gradient(
+    to right,
+    #f9ce70 0%,
+    #c59a26 50%,
+    #f9ce70 100%,
+    #7b5a00 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f9ce70", endColorstr="#7b5a00", GradientType=1 );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar .navbar-nav li a:hover {
+  background: #990a22;
+  background: linear-gradient(to right, #990a22 8%, #c80936 50%, #d31f1f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#990a22", endColorstr="#d31f1f", GradientType=1 );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar .navbar-nav li:hover {
+  background: #f9ce70;
+  background: linear-gradient(
+    to right,
+    #f9ce70 0%,
+    #c59a26 50%,
+    #f9ce70 100%,
+    #7b5a00 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f9ce70", endColorstr="#7b5a00", GradientType=1 );
+}
+
+h1 {
+  background: #f9ce70;
+  background: linear-gradient(
+    to right,
+    #f9ce70 0%,
+    #c59a26 50%,
+    #f9ce70 100%,
+    #7b5a00 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f9ce70", endColorstr="#7b5a00", GradientType=1 );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
